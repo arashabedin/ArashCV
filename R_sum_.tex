@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage[
+  top=1.25cm,
+  bottom=1.25cm,
+  left=2.5cm,
+  right=2.5cm
+]{geometry}
+\usepackage{url}
+\usepackage{sectsty}
+
+\frenchspacing
+\pagestyle{empty}
+
+\sectionfont{
+	\usefont{OT1}{phv}{b}{n}
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}
+}
+
+%%% Macros
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}
+\newcommand{\sepspace}{\vspace*{1em}}
+
+\newcommand{\MyName}[1]{
+	\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+	\par \normalsize \normalfont
+}
+
+\newcommand{\MySlogan}[1]{
+	\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+	\par \normalsize \normalfont
+}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+	\noindent\hangindent=2em
+	\parbox{\spacebox}{\textit{#1}}
+	\hspace{1.5em} #2 \par
+}
+
+\newcommand{\SkillsEntry}[2]{
+	\noindent\hangindent=2em
+	\parbox{\spacebox}{\textit{#1}}
+	\hspace{1.5em} #2 \par
+}
+
+\newcommand{\EducationEntry}[4]{
+	\noindent \textbf{#1} \hfill
+	\colorbox{Black}{\parbox{6em}{\hfill\color{White}#2}} \par
+	\noindent \textit{#3} \par
+	\noindent\hangindent=2em \small #4
+	\normalsize \par
+}
+
+%%% Document
+\begin{document}
+
+\MyName{Arash Abedin}
+\MySlogan{Fullstack Developer \& Graphic Designer}
+\sepspace\sepspace
+\smash{\includegraphics[width=3.6cm]{img/ari.png}}
+
+%%% Personal details
+\NewPart{Personal details}
+Denmark\hfill
+
+\PersonalEntry{Whatsapp}{+45-60526031}
+\PersonalEntry{Mail}{\url{arash.abedin@gmail.com}}
+\PersonalEntry{Portfolio}{(legacy) \url{https://arash.dk}}
+\PersonalEntry{GitHub}{\url{https://github.com/arashabedin}}
+
+%%% Education
+\NewPart{Education}
+
+\EducationEntry{Master's in Computer Science and Informatics}{2017--2019}{Roskilde University}{
+$\bullet$ Fullstack Development (.NET Core, C\#, Node.js, REST APIs) \\
+$\bullet$ Systems Architecture \\
+$\bullet$ Multiplayer Game Development (Unity) \\
+$\bullet$ Big Data Analysis \\
+$\bullet$ Mobile Development \\
+$\bullet$ Digital Image Processing
+}
+
+\sepspace
+
+\EducationEntry{Bachelor's Supplementary Semester in Computer Science}{2017}{Roskilde University}{
+$\bullet$ Algorithms \& Data Structures \\
+$\bullet$ Advanced Java Programming \\
+$\bullet$ Interactive Digital Systems
+}
+
+\sepspace
+
+\EducationEntry{Professional Bachelor Degree in Digital Concept Development}{2013--2015}{Zealand Institute of Business and Technology}{
+$\bullet$ Digital Design / Interaction Design \\
+$\bullet$ User Research / User Experience Design \\
+$\bullet$ Project Management \\
+$\bullet$ E-business
+}
+
+\sepspace
+
+\EducationEntry{Academic Profession in Multimedia and Communication}{2008--2010}{KEA Copenhagen School of Design and Technology}{
+$\bullet$ Web Development \\
+$\bullet$ Digital Design \\
+$\bullet$ Digital Communication \\
+$\bullet$ Video Editing
+}
+
+%%% Work Experience
+\NewPart{Work experience}
+
+\EducationEntry{Team Lead Frontend Developer}{May 2024--Present}{JAKALA · Full-time (Denmark)}{
+$\bullet$ Leading frontend architecture and delivery across enterprise platforms \\
+$\bullet$ Driving technical strategy, quality standards, and team growth \\
+$\bullet$ Mentoring senior and mid-level frontend developers \\
+$\bullet$ Collaborating closely with stakeholders, designers, and backend teams \\
+$\bullet$ FANUC platform using headless CMS architecture with Next.js \\
+$\bullet$ CertainTeed platform using React, Tailwind CSS, Drupal (headless), and Turborepo monorepo setup
+}
+
+\sepspace
+
+\EducationEntry{Founder \& Lead Developer}{Jun 2019--Present}{Croqee · Self-employed (Copenhagen, Denmark)}{
+$\bullet$ Founder and lead developer of a gamified drawing and learning platform \\
+$\bullet$ Built as a web platform and native iOS app \\
+$\bullet$ Architecture, fullstack development, UX/UI, and image processing \\
+$\bullet$ Achieved \textbf{500+ active users}
+}
+
+\sepspace
+
+\EducationEntry{Team Lead Frontend Developer}{2022--May 2024}{FFW}{
+$\bullet$ Senior frontend developer on EESII Platform (Bertelsmann) \\
+$\bullet$ Lead frontend developer for Kohler \\
+$\bullet$ Senior frontend developer for Bayer (HCP Hub) \\
+$\bullet$ Led an international frontend team of 8 developers
+}
+
+\sepspace
+
+\EducationEntry{Fullstack Developer}{2019--2022}{FFW}{
+$\bullet$ Fullstack development for Denmark's Radio (DR) \\
+$\bullet$ Frontend development for Danish Transport Authority \\
+$\bullet$ Frontend lead contractor for Raytheon Technologies
+}
+
+%%% Skills
+\NewPart{Development Skills}
+
+\SkillsEntry{Languages}{HTML5 / CSS3 / SaSS / LeSS}
+\SkillsEntry{}{JavaScript (ES6+) / TypeScript}
+\SkillsEntry{}{C\# / Java / Python / SQL / PHP}
+
+\SkillsEntry{Frameworks}{React / Next.js / Gatsby / React Native}
+\SkillsEntry{}{Vue / Vuex / Angular}
+\SkillsEntry{}{Ionic + Capacitor / Capacitor JS}
+
+\SkillsEntry{Styling}{Tailwind CSS / Material UI / Bootstrap}
+
+\SkillsEntry{State}{Redux / Zustand}
+\SkillsEntry{Build}{Webpack / Rollup / Gulp}
+\SkillsEntry{Monorepos}{NX / Turborepo}
+
+\SkillsEntry{Backend}{Node.js / Express / Socket.io / GraphQL}
+\SkillsEntry{DevOps}{Docker / Kubernetes / AWS / Vercel / Netlify}
+\SkillsEntry{Tools}{Git / npm / pnpm / yarn}
+
+%%% Software
+\NewPart{Software Skills}
+
+\SkillsEntry{Adobe}{Photoshop / Illustrator / After Effects / Premiere}
+\SkillsEntry{Design}{Figma / Zeplin}
+\SkillsEntry{Dev}{VS Code / IntelliJ / Android Studio / Xcode}
+\SkillsEntry{}{Cursor / Unity / Blender / \LaTeX}
+
+%%% Languages
+\NewPart{Language Skills}
+
+\SkillsEntry{}{English (Fluent) / Persian (Native) / Danish (Fluent)}
+\SkillsEntry{}{French (Beginner) / Italian (Beginner) / Turkish (Beginner)}
+
+\end{document}
