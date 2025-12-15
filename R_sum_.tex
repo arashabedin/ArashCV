@@ -66,7 +66,9 @@
 	\noindent \textbf{#1} \hfill
 	\colorbox{Black}{\parbox{6em}{\hfill\color{White}#2}} \par
 	\noindent \textit{#3} \par
-	\noindent\hangindent=2em \small #4
+	\small
+	\parindent=0pt
+	\noindent\hspace{2em}\parbox[t]{\dimexpr\textwidth-2em\relax}{#4}
 	\normalsize \par
 }
 
